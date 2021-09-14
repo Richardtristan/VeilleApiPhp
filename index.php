@@ -1,6 +1,7 @@
 <?php
 $id = '151';
 
+
 $api = curl_init("https://pokeapi.co/api/v2/pokemon/$id/");
 curl_setopt($api, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($api);
